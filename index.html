@@ -3,8 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" media="only screen and (max-width:800px)" href="800.css" /><!--подключили внешнюю таблицу стилей используя
-внешний файл-->
+
+<!--ПОДКЛЮЧАЕМ ВНЕШНИЕ ФАЙЛЫ СSS ЧЕРЕЗ МЕДИАЗАПРОСЫ. ТАК ДЕЛАТЬ НЕ РЕКОМЕНДУЕТСЯ ПОСКОЛЬКУ УВЕЛИЧИВАЕТСЯ СКОРОСЬ ЗАГРУЗКИ САЙТА-->
+<!--<link rel="stylesheet" media="only screen and (max-width:800px)" href="800.css" />--><!--подключили внешнюю таблицу стилей используя
+внешний файл
+media ="" - это начало медиазапроса
+only - это характеристика для старых браузеров которые не принимают медиазапросы, можна не писать, но для надежности надо
+screen and (характеристика) - указываем что для экрана
+href="" - просто подключаем отдельный внешний файл 
+-->
+<!--<link rel="stylesheet" media="only screen and(min-width:600)" href="600.css">-->
 
 <title>Adaptive layout</title>
 </head>
